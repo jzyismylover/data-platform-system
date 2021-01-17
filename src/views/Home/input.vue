@@ -63,7 +63,7 @@ export default {
 
     beforeUpload(file) {
       this.fileName = file.name;
-      let type = this.fileName.split(".")[1] || "";
+      let type = this.fileName.split(".")[1] || ""; // bug
       this.file_type = type;
       if (type == "txt") {
         this.$confirm("字符分隔选择", {

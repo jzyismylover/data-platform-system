@@ -18,7 +18,7 @@
         </template>
       </el-table-column>
       <el-table-column prop="address" label="地址" show-overflow-tooltip></el-table-column>
-      <el-table-column label="按钮" width="200">
+      <el-table-column label="操作" width="200">
         <template slot-scope="scope">
           <el-button type="primary" @click="handleClick(scope.row)">{{
             scope.row.isEdit ? "完成" : "编辑"
@@ -96,7 +96,7 @@ export default {
         },
       ],
       currentPage: 1,
-      pageSize: 5,
+      pageSize: 8,
       home: [],
     };
   },
